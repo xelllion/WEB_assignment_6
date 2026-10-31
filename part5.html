@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WEB_assignment_6 | Part 5</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>WEB_assignment_6</h1>
+    <p>Amerkhanova Aruzhan | SE-2529</p>
+  </header>
+  <nav aria-label="Assignment parts">
+    <a href="index.html">Part 1</a>
+    <a href="part2.html">Part 2</a>
+    <a href="part3.html">Part 3</a>
+    <a href="part4.html">Part 4</a>
+    <a href="part5.html" class="active" aria-current="page">Part 5</a>
+  </nav>
+  <main>
+    <h2>Part 5. Image Gallery</h2>
+    <section>
+      <h3>Task 11. Interactive jQuery Project</h3>
+      <p>Click a thumbnail to enlarge it.</p>
+      <button id="gallery-show">Fade In</button>
+      <button id="gallery-hide">Fade Out</button>
+      <button id="gallery-toggle">Fade Toggle</button>
+      <div class="gallery">
+        <figure><button class="thumbnail" aria-label="Enlarge: Mountain meadow at sunset"><img src="images/meadow.jpg" alt="Mountain meadow at sunset"></button><figcaption>Mountain meadow at sunset</figcaption></figure>
+        <figure><button class="thumbnail" aria-label="Enlarge: Forest lake and sunlit peaks"><img src="images/forest-lake.jpg" alt="Forest lake and sunlit peaks"></button><figcaption>Forest lake and sunlit peaks</figcaption></figure>
+        <figure><button class="thumbnail" aria-label="Enlarge: Rocky mountains beside a blue lake"><img src="images/mountains.jpg" alt="Rocky mountains beside a blue lake"></button><figcaption>Rocky mountains beside a blue lake</figcaption></figure>
+        <figure><button class="thumbnail" aria-label="Enlarge: Snowy mountains at dusk"><img src="images/winter.jpg" alt="Snowy mountains at dusk"></button><figcaption>Snowy mountains at dusk</figcaption></figure>
+      </div>
+    </section>
+    <dialog id="lightbox" aria-label="Enlarged image">
+      <button id="close-lightbox" autofocus>Close</button>
+      <img id="large-image" alt="Enlarged gallery image">
+      <p id="image-caption"></p>
+    </dialog>
+  </main>
+  <footer>Amerkhanova Aruzhan | SE-2529</footer>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="part5.js"></script>
+</body>
+</html>

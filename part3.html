@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WEB_assignment_6 | Part 3</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>WEB_assignment_6</h1>
+    <p>Amerkhanova Aruzhan | SE-2529</p>
+  </header>
+  <nav aria-label="Assignment parts">
+    <a href="index.html">Part 1</a>
+    <a href="part2.html">Part 2</a>
+    <a href="part3.html" class="active" aria-current="page">Part 3</a>
+    <a href="part4.html">Part 4</a>
+    <a href="part5.html">Part 5</a>
+  </nav>
+  <main>
+    <h2>Part 3. DOM Manipulation</h2>
+    <section>
+      <h3>Task 5. Add &amp; Remove Elements</h3>
+      <ul id="item-list"><li>Item 1</li><li>Item 2</li></ul>
+      <button id="append-item">Add Item</button>
+      <button id="prepend-item">Add at Beginning</button>
+      <button id="remove-item">Remove Item</button>
+    </section>
+    <section>
+      <h3>Task 6. Modifying Attributes</h3>
+      <img id="attribute-image" class="demo-image" src="images/forest-lake.jpg" alt="Forest lake and sunlit peaks">
+      <button id="change-image">Change Image</button>
+      <p><a id="resource-link" href="https://jquery.com/">jQuery website</a></p>
+      <button id="change-link">Change Link</button>
+    </section>
+    <section>
+      <h3>Task 7. Form Interaction</h3>
+      <form id="live-form">
+        <label for="name">Name</label>
+        <input id="name" name="name" type="text" autocomplete="name" placeholder="Enter your name">
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" autocomplete="email" placeholder="Enter your email">
+      </form>
+      <p>Name: <output id="name-output" for="name"></output></p>
+      <p>Email: <output id="email-output" for="email"></output></p>
+    </section>
+  </main>
+  <footer>Amerkhanova Aruzhan | SE-2529</footer>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="part3.js"></script>
+</body>
+</html>
